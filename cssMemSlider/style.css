@@ -8,7 +8,7 @@ body {
   background-color: #3c3c3c;
   display: flex;
   justify-content: center;
-  height: 600px;
+  overflow: hidden;
 }
 
 .slider {
@@ -16,13 +16,14 @@ body {
   flex-direction: column;
   background-color: #25272a;
   width: 80%;
-  height: 80%;
-  margin-top: 20px;
+  height: 80vh;
   border-radius: 20px;
+  margin-top: 5vh;
 }
 
 .wrapper {
   margin: 2%;
+  margin-bottom: 10vh;
   border-radius: 20px;
   overflow: hidden;
 }
@@ -49,27 +50,45 @@ input[name="slide-radio"] {
   display: none;
 }
 
-.slider-navigation {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 2%;
-}
-
 .nav-button {
-  width: 20px;
-  height: 20px;
-  border: #76abfe solid 3.5px;
+  position: absolute;
+  left:71%;
+  top:78vh;
+  width: 3vh;
+  height: 3vh;
+  background-color: #76abfe;
+  border: none;
   margin: 0 10px;
   border-radius: 10px;
   cursor: pointer;
   caret-color: transparent;
 }
 
-.nav-button:hover {
-  border: white solid 3.5px;
+label:nth-child(4){
+  left: 75%
 }
 
+label:nth-child(6){
+  left: 79%
+}
 
+label:nth-child(8){
+  left: 83%
+}
+
+:checked + label{
+  border: #76abfe solid 3.5px;
+  background-color: transparent;
+}
+
+:checked + label:hover{
+  border-color: white;
+  background-color: transparent;
+}
+
+.nav-button:hover {
+  background-color: white;
+}
 
 #radio1:checked ~ .s1 {
   margin-left: 0;
