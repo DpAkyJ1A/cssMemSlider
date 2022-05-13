@@ -13,17 +13,19 @@ body {
 
 .slider {
   display: flex;
-  flex-direction: column;
+  flex-direction: row-reverse;
+  flex-wrap: wrap-reverse;
   background-color: #25272a;
-  width: 80%;
+  width: 60%;
   height: 80vh;
   border-radius: 20px;
   margin-top: 5vh;
 }
 
 .wrapper {
+  height: 85%;
   margin: 2%;
-  margin-bottom: 10vh;
+  margin-bottom: 0;
   border-radius: 20px;
   overflow: hidden;
 }
@@ -51,12 +53,9 @@ input[name="slide-radio"] {
 }
 
 .nav-button {
-  position: absolute;
-  left:71%;
-  top:78vh;
   width: 4vh;
   height: 4vh;
-  margin: 0 10px;
+  margin: 2% 1.5%;
   cursor: pointer;
   caret-color: transparent;
   display: flex;
@@ -65,22 +64,10 @@ input[name="slide-radio"] {
 }
 
 .nav-button > span{
-  width: 70%;
-  height: 70%;
+  width: 60%;
+  height: 60%;
   background-color: #76abfe;
   border-radius: 3vh;
-}
-
-label:nth-child(4){
-  left: 75%
-}
-
-label:nth-child(6){
-  left: 79%
-}
-
-label:nth-child(8){
-  left: 83%
 }
 
 :checked + label > span{
@@ -97,15 +84,15 @@ label:nth-child(8){
   background-color: white;
 }
 
-#radio1:checked ~ .s1 {
+#radio1:checked ~ .wrapper > .slides > .s1 {
   margin-left: 0;
 }
-#radio2:checked ~ .s1 {
+#radio2:checked ~ .wrapper > .slides > .s1 {
   margin-left: -25%;
 }
-#radio3:checked ~ .s1 {
+#radio3:checked ~ .wrapper > .slides > .s1 {
   margin-left: -50%;
 }
-#radio4:checked ~ .s1 {
+#radio4:checked ~ .wrapper > .slides > .s1 {
   margin-left: -75%;
 }
