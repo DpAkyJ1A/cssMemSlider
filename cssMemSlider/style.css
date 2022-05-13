@@ -31,13 +31,13 @@ body {
 }
 
 .slides {
-  width: 400%;
+  width: 500%;
   height: 100%;
   display: flex;
 }
 
 .slide {
-  width: 25%;
+  width: 20%;
   height: 100%;
   transition: all 0.5s ease;
 }
@@ -88,11 +88,14 @@ input[name="slide-radio"] {
   margin-left: 0;
 }
 #radio2:checked ~ .wrapper > .slides > .s1 {
-  margin-left: -25%;
+  margin-left: -20%;
 }
 #radio3:checked ~ .wrapper > .slides > .s1 {
-  margin-left: -50%;
+  margin-left: -40%;
 }
 #radio4:checked ~ .wrapper > .slides > .s1 {
-  margin-left: -75%;
+  margin-left: -60%;
+}
+#radio5:checked ~ .wrapper > .slides > .s1 {
+  margin-left: -80%;
 }
