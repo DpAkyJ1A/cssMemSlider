@@ -54,14 +54,21 @@ input[name="slide-radio"] {
   position: absolute;
   left:71%;
   top:78vh;
-  width: 3vh;
-  height: 3vh;
-  background-color: #76abfe;
-  border: none;
+  width: 4vh;
+  height: 4vh;
   margin: 0 10px;
-  border-radius: 10px;
   cursor: pointer;
   caret-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-button > span{
+  width: 70%;
+  height: 70%;
+  background-color: #76abfe;
+  border-radius: 3vh;
 }
 
 label:nth-child(4){
@@ -76,17 +83,17 @@ label:nth-child(8){
   left: 83%
 }
 
-:checked + label{
+:checked + label > span{
   border: #76abfe solid 3.5px;
   background-color: transparent;
 }
 
-:checked + label:hover{
+:checked + label:hover > span{
   border-color: white;
   background-color: transparent;
 }
 
-.nav-button:hover {
+.nav-button:hover > span{
   background-color: white;
 }
 
