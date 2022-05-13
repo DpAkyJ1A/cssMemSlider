@@ -140,3 +140,20 @@ input[name="slide-radio"] {
   height: 100%;
   border-radius: 20px;
 }
+
+@media (max-width: 600px) {
+  .slider{
+    width: 80%;
+    height: 50vh;
+  }
+  .wrapper{
+    justify-content: center;
+  }
+  .signatures-wrapper {
+    flex-basis: 100%;
+    order: -1;
+  }
+  .slides-wrapper{
+    height: 70%;
+  }
+}
