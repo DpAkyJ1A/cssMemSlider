@@ -38,7 +38,7 @@ input[name="slide-radio"] {
 .nav-button {
   width: 5vmin;
   height: 5vmin;
-  margin: 2% 1%;
+  margin: 2% 0.5%;
   cursor: pointer;
   caret-color: transparent;
   display: flex;
@@ -47,8 +47,8 @@ input[name="slide-radio"] {
 }
 
 .nav-button > span {
-  width: 60%;
-  height: 60%;
+  width: 50%;
+  height: 50%;
   background-color: #76abfe;
   border-radius: 50%;
 }
