@@ -112,7 +112,7 @@ input[name="slide-radio"] {
 
 .signature > p {
   color: #fafafa;
-  font-size: 110%;
+  font-size: 2vmax;
 }
 
 /* Slides */
@@ -170,5 +170,8 @@ input[name="slide-radio"] {
   }
   .slide > img {
     border-radius: 4vw;
+  }
+  .signature > p {
+    font-size: 3vw;
   }
 }
